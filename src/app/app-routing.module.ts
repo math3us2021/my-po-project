@@ -46,11 +46,17 @@ const routes: Routes = [
     canActivate: [AuthGuardService],
     component: ProductUpdateComponent
   },
-  {
-    path: '**',
-    component: NotPageComponent,
-    // component: NotPageModule,
-  },
+  // {
+  //   path: 'pipes',
+  //   canActivate: [AuthGuardService],
+  //   loadChildren: () => import('./component/pipes/pipes.module').then(m => m.PipesModule)
+  // }
+
+  // {
+  //   path: '**',
+  //   component: NotPageComponent,
+  //   // component: NotPageModule,
+  // },
 ]
 
 @NgModule({

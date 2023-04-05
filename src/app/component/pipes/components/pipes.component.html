@@ -1,0 +1,7 @@
+<h5>Exemplo de Pipes</h5>
+
+<p>Id: {{ book.id  }}</p>
+<p>Título: {{ book.title | uppercase }}</p>
+<p>Preço: {{ book.price | currency:'BRL':true }}</p>
+<p>Paginas: {{ book.page | number:'1.1-1'}}</p>
+<p>Date: {{  book.data | date:'dd-MM-YY'}}</p>

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -20,6 +20,7 @@ import { LoginService } from './view/login/login.service';
 import { AuthGuardService } from './guard/auth.guard';
 import { PeopleModule } from './component/people/people-module.module';
 import { NotPageComponent } from './component/notPage/components/not-page/not-page.component';
+import { PipesModule } from './component/pipes/pipes.module';
 // import { CoursesGuards } from './component/course/guard/courses.guard';
 
 
@@ -45,11 +46,19 @@ import { NotPageComponent } from './component/notPage/components/not-page/not-pa
     FormsModule,
     PeopleModule,
     ProductModule,
+    PipesModule
 
     // CourseModule,
 
   ],
-  providers: [LoginService, AuthGuardService],
+  providers: [
+    LoginService,
+    AuthGuardService,
+    {
+      provide: LOCALE_ID,
+      useValue: 'en-US'
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

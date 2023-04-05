@@ -1,11 +1,27 @@
 <div class="container display" >
   <div class="login display">
     <router-outlet ></router-outlet>
-    <div routerLink="login">
-      <po-avatar p-size="small" p-src="assets/image/monster.jpeg" class=""></po-avatar>
-    </div>
     <div class="po-m-5">
-      <po-input  p-placeholder="Digite seu login" p-required="true"></po-input>
+      <form #f="ngForm">
+        <div class="po-row">
+          <po-email
+            class="po-lg-12"
+            name="email"
+            [(ngModel)]="email"
+            p-clean
+            p-error-pattern="Invalid e-mail"
+            p-label="Email"
+            p-placeholder="Digite seu email aqui"
+            p-required
+          >
+          </po-email>
+        </div>
+
+        <div class="po-row">
+          <po-button class="po-md-4" p-label="Entrar" p-kind="primary" [p-disabled]="f.form.invalid" (p-click)="openDialog()">
+          </po-button>
+        </div>
+      </form>
     </div>
-    <po-button p-label="Login" (p-click)="login()" p-icon="po-icon-user"></po-button>
+    <!-- <po-button p-label="Login" (p-click)="login()" p-icon="po-icon-user"></po-button> -->
 </div>

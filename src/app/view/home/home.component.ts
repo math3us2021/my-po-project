@@ -25,4 +25,7 @@ export class HomeComponent {
   createPeople(){
     this.router.navigate(['/people']);
   }
+  pipes(){
+    this.router.navigate(['/pipes']);
+  }
 }
