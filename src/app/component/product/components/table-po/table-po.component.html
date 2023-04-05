@@ -1,0 +1,20 @@
+<po-table
+  p-container=true
+  [p-height]="400"
+  [p-hide-text-overflow]="true"
+  [p-selectable]="true"
+  [p-sort]="true"
+  [p-striped]="true"
+  [p-actions]="actions"
+  [p-columns]="columns"
+  [p-items]="items"
+  [p-max-columns]="7"
+  (p-collapsed)="onCollapseDetail()"
+  (p-expanded)="onExpandDetail()"
+  (p-selected)="sumTotal($event)"
+  (p-unselected)="decreaseTotal($event)"
+  (p-change-visible-columns)="changeColumnVisible($event)"
+  (p-restore-column-manager)="restoreColumn()"
+  updateItems="updateItems($event)"
+>
+</po-table>

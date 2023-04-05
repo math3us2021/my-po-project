@@ -1,0 +1,28 @@
+<div>
+  <po-dynamic-form
+  #dynamicForm
+  p-auto-focus="description"
+  [p-fields]="fields"
+  [p-load]="onLoadFields.bind(this)"
+  [p-validate]="this.onChangeFields.bind(this)"
+  [p-validate-fields]="validateFields"
+  [p-value]="person"
+>
+</po-dynamic-form>
+
+<div class="po-row">
+  <po-button
+    class="po-md-3"
+    p-label="Save"
+    (p-click)="dataSave(this.dynamicForm.value)"
+    [p-disabled]="!dynamicForm?.form?.valid"
+  >
+  </po-button>
+  <po-button
+    class="po-md-3"
+    p-label="Cancel"
+    (p-click)="cancel()">
+  </po-button>
+</div>
+
+

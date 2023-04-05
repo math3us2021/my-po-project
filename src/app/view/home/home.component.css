@@ -1,0 +1,34 @@
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 10px 0 10px;
+}
+.containerTable{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.sizeTableProduct {
+  text-align: center;
+  padding: 20px;
+  max-width: 50%;
+  height: 100%;
+  color: #753399;
+  border: 1px solid;
+  border-radius: 10px;
+  box-shadow: -1px 6px 14px 3px rgba(0,0,0,0.31);
+
+}
+.sizeTablePeople {
+  padding: 20px;
+  max-width: 50%;
+  border: 1px solid #753399;
+  border-radius: 10px;
+  box-shadow: -1px 6px 14px 3px rgba(0,0,0,0.31);
+
+}
+h3 {
+  text-align: center;
+  color: #a82f69;
+}

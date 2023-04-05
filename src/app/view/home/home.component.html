@@ -1,0 +1,22 @@
+<div class="container">
+  <div>
+    <div class="actions">
+      <po-button p-label="Cadastrar Pessoa" (p-click)="createPeople()" class="po-m-1"></po-button>
+      <po-button p-label="Cadastrar Curso" (p-click)="createCourse()" ></po-button>
+      <po-button p-label="Novo produto" (p-click)="createProduct()" class="po-m-1"></po-button>
+    </div>
+  </div>
+  <div class="containerTable">
+    <div class="sizeTablePeople ">
+      <h3>Tabela Pessoas</h3>
+      <app-read></app-read>
+    </div>
+    <div class="sizeTableProduct ">
+      <h3>Tabela Produtos</h3>
+      <app-table-po></app-table-po>
+    </div>
+
+  </div>
+  <div>
+  </div>
+</div>
