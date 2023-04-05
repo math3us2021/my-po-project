@@ -7,6 +7,8 @@ import { PeopleCreateComponent } from './component/people/components/people-crea
 import { AuthGuardService } from './guard/auth.guard';
 import { NotPageComponent } from './component/notPage/components/not-page/not-page.component';
 import { HomeComponent } from './view/home/home.component';
+import { SamplePoDynamic } from './component/product/components/register/register.component';
+import { ProductUpdateComponent } from './component/product/components/product-update/product-update.component';
 // import { CoursesGuards } from './component/course/guard/courses.guard';
 
 
@@ -34,11 +36,21 @@ const routes: Routes = [
     loadChildren: () => import('./component/product/product.module').then(m => m.ProductModule)
     // component: PeopleCreateComponent,
   },
-  // {
-  //   path: '**',
-  //   component: NotPageComponent,
-  //   // component: NotPageModule,
-  // },
+  {
+    path: 'product/create',
+    canActivate: [AuthGuardService],
+    component: SamplePoDynamic
+  },
+  {
+    path: 'product/update/:id',
+    canActivate: [AuthGuardService],
+    component: ProductUpdateComponent
+  },
+  {
+    path: '**',
+    component: NotPageComponent,
+    // component: NotPageModule,
+  },
 ]
 
 @NgModule({

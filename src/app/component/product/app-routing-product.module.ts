@@ -14,16 +14,7 @@ const routesProduct: Routes = [
     // canActivate: [AuthGuardService],
     component: HomeComponent
   },
-  {
-    path: 'product/create',
-    canActivate: [AuthGuardService],
-    component: SamplePoDynamic
-  },
-  {
-    path: 'product/update/:id',
-    canActivate: [AuthGuardService],
-    component: ProductUpdateComponent
-  },
+
 ]
 
 @NgModule({
