@@ -15,10 +15,12 @@ import { LoginComponent } from './view/login/login.component';
 import { HeaderComponent } from './component/template/header/header.component';
 
 
-import { PeopleModuleModule } from './component/people/people-module.module';
 import { ProductModule } from './component/product/product.module';
 import { LoginService } from './view/login/login.service';
 import { AuthGuardService } from './guard/auth.guard';
+import { PeopleModule } from './component/people/people-module.module';
+import { NotPageComponent } from './component/notPage/components/not-page/not-page.component';
+// import { CoursesGuards } from './component/course/guard/courses.guard';
 
 
 
@@ -28,6 +30,7 @@ import { AuthGuardService } from './guard/auth.guard';
     HomeComponent,
     LoginComponent,
     HeaderComponent,
+    NotPageComponent,
 
     // CourseComponent,
 
@@ -40,7 +43,7 @@ import { AuthGuardService } from './guard/auth.guard';
     PoModule,
     PoTemplatesModule,
     FormsModule,
-    PeopleModuleModule,
+    PeopleModule,
     ProductModule,
 
     // CourseModule,

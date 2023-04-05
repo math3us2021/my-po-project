@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { CourseServiceService } from './services/course-service.service';
 import { PoModule } from '@po-ui/ng-components';
 import { CourseComponent } from './components/course/course.component';
+import { CoursesGuards } from './guard/courses.guard';
 
 
 @NgModule({
@@ -22,6 +23,6 @@ import { CourseComponent } from './components/course/course.component';
     RouterModule,
     PoModule,
   ],
-  providers: [CourseServiceService],
+  providers: [CourseServiceService, CoursesGuards],
 })
 export class CourseModule { }

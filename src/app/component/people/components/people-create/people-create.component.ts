@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { People, Product } from '../../../product/model/productType';
+import { Product } from '../../../product/model/productType';
 import { PoDynamicFormField, PoDynamicFormFieldChanged, PoDynamicFormValidation, PoNotificationService } from '@po-ui/ng-components';
 import { Router } from '@angular/router';
 import { PoDynamicFormRegisterService } from 'src/app/view/home/po-dynamic-form-register.service';
 import { ProductService } from 'src/app/component/product/services/product.service';
+import { People } from '../../model/peopleType';
 
 @Component({
   selector: 'app-people-create',

@@ -5,12 +5,5 @@ export type Product ={
     active: boolean,
 }
 
-export type People = {
-    id?: number,
-    name: string,
-    cpf: string,
-    age: number,
-}
-
 
 ///

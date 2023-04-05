@@ -9,11 +9,21 @@ import { AuthGuardService } from 'src/app/guard/auth.guard';
 
 
 const routesProduct: Routes = [
-  { path: 'home',
-  canActivate: [AuthGuardService],
-  component: HomeComponent },
-  { path: 'product/create', component: SamplePoDynamic },
-  {path: 'product/update/:id', component: ProductUpdateComponent},
+  {
+    path: '',
+    // canActivate: [AuthGuardService],
+    component: HomeComponent
+  },
+  {
+    path: 'product/create',
+    canActivate: [AuthGuardService],
+    component: SamplePoDynamic
+  },
+  {
+    path: 'product/update/:id',
+    canActivate: [AuthGuardService],
+    component: ProductUpdateComponent
+  },
 ]
 
 @NgModule({
@@ -25,4 +35,4 @@ const routesProduct: Routes = [
   ],
   exports: [RouterModule]
 })
-export class ProductRoutingModule{}
+export class ProductRoutingModule { }
