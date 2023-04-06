@@ -21,6 +21,7 @@ import { AuthGuardService } from './guard/auth.guard';
 import { PeopleModule } from './component/people/people-module.module';
 import { NotPageComponent } from './component/notPage/components/not-page/not-page.component';
 import { PipesModule } from './component/pipes/pipes.module';
+import { TranslocoRootModule } from './transloco-root.module';
 // import { CoursesGuards } from './component/course/guard/courses.guard';
 
 
@@ -46,7 +47,8 @@ import { PipesModule } from './component/pipes/pipes.module';
     FormsModule,
     PeopleModule,
     ProductModule,
-    PipesModule
+    PipesModule,
+    TranslocoRootModule
 
     // CourseModule,
 
