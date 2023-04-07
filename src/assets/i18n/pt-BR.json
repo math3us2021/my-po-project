@@ -1,0 +1,8 @@
+{
+  "hello": "livro",
+  "setting": {
+    "title": "Opções"  ,
+    "exit": "Sair",
+    "language": "Idioma"
+  }
+}

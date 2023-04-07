@@ -1,3 +1,8 @@
 <app-header *ngIf="showMenu"></app-header>
 <!-- <app-nav></app-nav> -->
 <router-outlet></router-outlet>
+<div *transloco="let t">
+  <p>{{ t('hello') }}</p>
+</div>
+<button (click)="translo('pt-BR')"> Protugues </button>
+<button (click)="translo('en')"> Ingles </button>
